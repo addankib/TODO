@@ -23,6 +23,8 @@ public class TodoController {
     @Autowired
     TodoService todoService;
 
+
+
     @GetMapping()
     public ResponseEntity<List> get (){
         return new ResponseEntity<>(todoService.getAll(), HttpStatus.OK);
